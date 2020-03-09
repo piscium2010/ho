@@ -1,0 +1,112 @@
+body {
+    font-family: sans-serif;
+    color: #333333;
+    margin: 0;
+}
+
+h1, h3 {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0;
+    }
+}
+
+nav {
+    align-items: center;
+    position: fixed;
+    top: 0;
+    color: white;
+    display: flex;
+    line-height: 50px;
+    font-size: larger;
+    height: 50px;
+    width: 100%;
+    background-color: #1d2736;
+    padding: 0 12px;
+    z-index: 10;
+
+    h1 {
+        width: 30%;
+    }
+
+    .search {
+        flex: 1 1;
+        background-color: white;
+    }
+
+    .profile {
+        flex: 1 1;
+    }
+}
+
+.main {
+    margin-top: 50px;
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto 0;
+    background-color: #f2f2f5;
+    padding: 12px;
+    min-height: 100vh;
+}
+
+// Movie
+.block {
+    display: flex;
+    margin: 0 auto 12px;
+
+    .title {
+        cursor: pointer;
+
+        &:hover {
+            color: orange !important;
+        }
+
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.detail {
+    .overview {
+        display: flex;
+        position: relative;
+        .left {
+            border-radius: 15px;
+            overflow: hidden;
+            width: 250px;
+            height: 250px;
+            img {
+                width: 100%;
+            }
+        }
+        .meta {
+            flex: 1 1;
+            padding: 12px;
+        }
+    }
+
+    .lime-textField-input {
+        cursor: pointer;
+    }
+
+    .download {
+        font-size: smaller;
+        padding-left: 6px;
+        line-height: 30px;
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 12px;
+    color: gray;
+}
